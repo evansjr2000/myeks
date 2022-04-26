@@ -1,4 +1,6 @@
 #!/bin/bash -x
 
-eksctl get nodegroup --cluster evansjr --region us-west-2
+export CLUSTER="johnevans5"
+
+eksctl get nodegroup --cluster $CLUSTER --region us-west-2
 
